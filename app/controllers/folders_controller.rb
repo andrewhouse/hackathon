@@ -5,7 +5,7 @@ class FoldersController < ApplicationController
   # GET /folders
   # GET /folders.json
   def index
-    @folders = Folder.all
+    @folders = current_employee.folders.all
   end
 
   # GET /folders/1
@@ -25,7 +25,7 @@ class FoldersController < ApplicationController
   # POST /folders
   # POST /folders.json
   def create
-    @folder = Folder.new(folder_params)
+    @folder = current_employee.folders.new(folder_params)
 
     respond_to do |format|
       if @folder.save

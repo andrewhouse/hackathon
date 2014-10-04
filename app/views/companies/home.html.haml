@@ -1,1 +1,18 @@
-%h1 This is the Home Page
+%h1 ABC-Design.com
+
+.mainBanner
+  .bgEP
+.inputBox
+  -unless current_employee
+    = form_tag session_path(:employee) do
+      .comBox
+        = text_field_tag 'employee[email]'
+      .passBox    
+        = password_field_tag 'employee[password]'
+        = check_box_tag 'employee[remember_me]'
+      = label_tag 'employee[remember_me]', 'Remember me'
+      %button Sign in
+      = link_to "Forgot your password?", new_password_path(:employee)
+.appBox
+  %input#downloadBtn.button{:type => "submit", :value => "Available on the App Store"}
+  = image_tag 'apple-logo.png'
