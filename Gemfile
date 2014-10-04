@@ -19,6 +19,7 @@ gem "pg"
 gem "paperclip"
 gem "aws-sdk"
 gem 'figaro'
+gem 'gravtastic'
 
 group :development do
   gem "quiet_assets"

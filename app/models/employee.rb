@@ -24,9 +24,13 @@
 class Employee < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
+  include Gravtastic
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-  has_many :folders, through: :items
+  has_many :folders
+  has_many :folders
   belongs_to :company
+  has_many :api_keys
   validates_presence_of :company_id
+  gravtastic size: '250'
 end
