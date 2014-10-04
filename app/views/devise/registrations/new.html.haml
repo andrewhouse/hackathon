@@ -22,7 +22,7 @@
   = f.error_notification
   .form-inputs
     = f.hidden_field :company_id, value: "#{params[:id]}"
-    = f.input :fname, label: "First Name"
+    .name= f.input :fname, label: "First Name"
     = f.input :lname, label: "Last Name"
     = f.input :email, required: true, autofocus: true
     = f.input :password, required: true
