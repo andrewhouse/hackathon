@@ -28,4 +28,5 @@ class Employee < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_many :folders, through: :items
   belongs_to :company
+  validates_presence_of :company_id
 end
