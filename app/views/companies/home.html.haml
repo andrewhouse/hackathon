@@ -6,6 +6,7 @@
   -unless current_employee
     = form_tag session_path(:employee) do
       .comBox
+        = label_tag "Email"
         = text_field_tag 'employee[email]'
       .passBox    
         = password_field_tag 'employee[password]'

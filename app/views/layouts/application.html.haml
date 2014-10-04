@@ -25,7 +25,7 @@
         %ul.navLeft
           %li= link_to "Home", root_path
         %ul.navRight
-          =if current_employee
+          -if current_employee
             %li= link_to "#{current_employee.fname + current_employee.lname}" 
             %li= link_to "Log Out", destroy_employee_session_path, method: :delete
 
