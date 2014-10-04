@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @folder.title
+%p
+  %b Description:
+  = @folder.description
+%p
+  %b User:
+  = @folder.user_id
+
+= link_to 'Edit', edit_folder_path(@folder)
+\|
+= link_to 'Back', folders_path
