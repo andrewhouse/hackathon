@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   get '/home' => 'companies#home'
-    devise_for :employees, except: :sign_up
+    devise_for :employees
+    devise_scope :employee do
+      get '/companies/:id/register' => 'devise/registrations#new'
+    end
   resources :companies, shallow: true do 
-    devise_for :employees, only: :sign_up
     resources :employees, only: [:index, :show], shallow:true do
       resources :folders, shallow: true do 
         resources :items

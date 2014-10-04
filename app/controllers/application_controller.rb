@@ -6,7 +6,15 @@ class ApplicationController < ActionController::Base
 
   def configure_permitted_parameters
     devise_parameter_sanitizer.for(:sign_up) do |u|
-      u.permit(:email, :password, :password_confirmation, :role)
+      u.permit(:email, :password, :password_confirmation, :role, :fname, :lname, :company_id)
     end
+  end
+
+  def current_user
+    return @_current_user if @_current_user
+
+    token = request.headers["HTTP_AUTH_TOKEN"]
+    key = ApiKey.where(token: token).first!
+    @_current_user = key.user
   end
 end

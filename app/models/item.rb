@@ -15,7 +15,6 @@
 
 class Item < ActiveRecord::Base
   belongs_to :folder
-
   has_attached_file :record
   do_not_validate_attachment_file_type :record
   validates :record, :attachment_presence => true
