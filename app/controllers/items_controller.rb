@@ -72,4 +72,5 @@ class ItemsController < ApplicationController
     def item_params
       params.require(:item).permit(:folder_id, :title, :record)
     end
+
 end
