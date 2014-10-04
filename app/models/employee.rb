@@ -26,6 +26,6 @@ class Employee < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-  has_many :folders
+  has_many :folders, through: :items
   belongs_to :company
 end

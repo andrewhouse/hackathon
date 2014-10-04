@@ -1,11 +1,19 @@
 Rails.application.routes.draw do
-  resources :companies
-
-  resources :folders
-
-  resources :employees, only: [:index, :show]
-  
-  devise_for :employees
+  get '/home' => 'companies#home'
+    devise_for :employees, except: :sign_up
+  resources :companies, shallow: true do 
+    devise_for :employees, only: :sign_up
+    resources :employees, only: [:index, :show], shallow:true do
+      resources :folders, shallow: true do 
+        resources :items
+      end
+    end
+  end 
+ root "companies#home"
+ # resources :companies
+ # resources :employees
+ # resources :folders
+ # resources :items
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
