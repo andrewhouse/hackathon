@@ -16,6 +16,10 @@ gem "simple_form"
 gem "twitter-bootstrap-rails"
 gem "unicorn"
 gem "pg"
+gem "paperclip"
+gem "aws-sdk"
+gem 'figaro'
+
 group :development do
   gem "quiet_assets"
   gem "spring"

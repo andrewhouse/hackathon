@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Folder:
+  = @item.folder_id
+%p
+  %b Title:
+  =link_to @item.title, @item.record.url
+\|

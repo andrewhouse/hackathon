@@ -1,0 +1,21 @@
+%h1 Listing items
+
+%table
+  %tr
+    %th Folder
+    %th Title
+    %th
+    %th
+    %th
+
+  - @items.each do |item|
+    %tr
+      %td= item.folder_id
+      %td= item.title
+      %td= link_to 'Show', item
+      %td= link_to 'Edit', edit_item_path(item)
+      %td= link_to 'Destroy', item, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Item', new_folder_item_path
