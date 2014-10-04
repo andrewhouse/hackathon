@@ -27,4 +27,5 @@ class Employee < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   has_many :folders
+  belongs_to :company
 end
