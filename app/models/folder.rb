@@ -13,4 +13,9 @@
 class Folder < ActiveRecord::Base
   belongs_to :employee
   has_many :items
+
+  def size
+    items.map(&:record_file_size).inject(&:+)
+  end
+
 end

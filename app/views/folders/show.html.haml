@@ -1,12 +1,23 @@
-%p#notice= notice
+.mainBanner
+  .bgEP
+  .titleBoxEP
+    %span Folder Page
+  .logoBox
+    %img{:alt => "", :src => "http://cdn.dice.com/wp-content/uploads/2013/07/space-thumbnail.jpg"}/
+.folderBanner
+  %span= @folder.title
+  %p= @folder.description
 
-%p
-  %b Title:
-  = @folder.title
-%p
-  %b Description:
-  = @folder.description
-%p
-  %b User:
-  = @folder.employee.email
-
+.folderCon
+  =simple_form_for(@folder.items.new, url: folder_items_path(@folder), method: 'post') do |f|
+    =f.hidden_field :folder_id, value: @folder.id
+    = f.input :title
+    = f.input :record
+    = f.button :submit
+  -@folder.items.each do |item|
+    .folderTopBox
+      = link_to item.record.url do 
+        %i.fa.fa-file-pdf-o.fa-5x
+    /  %img{:alt => "", :src => "#"}/
+    /.folderBottomBox
+    /  %img{:alt => "", :src => "#"}/

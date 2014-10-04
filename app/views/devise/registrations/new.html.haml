@@ -1,23 +1,14 @@
-.containerEP
-  %nav.navBanner
-    %ul.navLeft
-      %li Home
-    %ul.navRight
-      %li User Name
-      %li Log Out
-  .mainBanner
-    .bgEP
-    .titleBoxEP
-      %span Folder Page
-    .logoBox
-      %img{:alt => "", :src => "http://cdn.dice.com/wp-content/uploads/2013/07/space-thumbnail.jpg"}
-  .folderBanner
-    %span SIGN UP
-  .folderCon
-    .folderTopBox
-      %img{:alt => "", :src => "#"}/
-    .folderBottomBox
-      %img{:alt => "", :src => "#"}/
+.titleBoxEP
+  %span Folder Page
+.logoBox
+  %img{:alt => "", :src => "http://cdn.dice.com/wp-content/uploads/2013/07/space-thumbnail.jpg"}
+.folderBanner
+  %span SIGN UP
+.folderCon
+  .folderTopBox
+    %img{:alt => "", :src => "#"}/
+  .folderBottomBox
+    %img{:alt => "", :src => "#"}/
 = simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
   = f.error_notification
   .form-inputs
@@ -29,4 +20,4 @@
     = f.input :password_confirmation, required: true
   .form-actions
     = f.button :submit, "Sign up"
-= render "devise/shared/links"
+  = render "devise/shared/links"
