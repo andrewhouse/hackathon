@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141004012725) do
+ActiveRecord::Schema.define(version: 20141004011723) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 20141004012725) do
   add_index "employees", ["email"], name: "index_employees_on_email", unique: true, using: :btree
   add_index "employees", ["reset_password_token"], name: "index_employees_on_reset_password_token", unique: true, using: :btree
 
+<<<<<<< HEAD
   create_table "folders", force: true do |t|
     t.string   "title"
     t.text     "description"
@@ -46,4 +47,6 @@ ActiveRecord::Schema.define(version: 20141004012725) do
     t.datetime "updated_at"
   end
 
+=======
+>>>>>>> 0244b1ff88021e067c37557c1bf4423f7cc8cc72
 end
