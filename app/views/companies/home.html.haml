@@ -3,7 +3,7 @@
     %ul.navLeft
       %li= link_to "Home", root_path
     %ul.navRight
-      =if current_employee
+      -if current_employee
         %li= link_to "#{current_employee.fname + current_employee.lname}"
         %li= link_to "Log Out", destroy_employee_session_path, method: :delete
   .bg
@@ -13,9 +13,9 @@
       -unless current_employee
         = form_tag session_path(:employee) do
           .comBox
-            = text_field_tag 'employee[email]'
+            = text_field_tag 'employee[email]', "Email"
           .passBox
-            = password_field_tag 'employee[password]'
+            = password_field_tag 'employee[password]', "Password"
             .remMe
               = check_box_tag 'employee[remember_me]'
               = label_tag 'employee[remember_me]', 'Remember me', class: "passText"
