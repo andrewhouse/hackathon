@@ -1,9 +1,22 @@
-%p#notice= notice
+.mainContainer
+  %nav.navBanner
+    %ul.navLeft
+      %span link
+    %ul.navRight
+      %span link
+  .bgBanner
+    .titleBox
+      %h1 Busbee
+    .logoBox
+      %img{:alt => "", :src => "http://cdn.dice.com/wp-content/uploads/2013/07/space-thumbnail.jpg"}
+  .middleBanner
+    %span COMPANY NAME:
+    %span= @company.title
 
-%p
-  %b Title:
-  = @company.title
+  = link_to 'Edit', edit_company_path(@company)
+  \|
+  = link_to 'Back', companies_path
+  %p#notice= notice
 
-= link_to 'Edit', edit_company_path(@company)
-\|
-= link_to 'Back', companies_path
+  .bottomBanner
+    %span Busbee 2014
