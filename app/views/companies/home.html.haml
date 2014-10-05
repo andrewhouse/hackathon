@@ -1,19 +1,28 @@
-%h1 ABC-Design.com
-
-.mainBanner
-  .bgEP
-.inputBox
-  -unless current_employee
-    = form_tag session_path(:employee) do
-      .comBox
-        = label_tag "Email"
-        = text_field_tag 'employee[email]'
-      .passBox    
-        = password_field_tag 'employee[password]'
-        = check_box_tag 'employee[remember_me]'
-      = label_tag 'employee[remember_me]', 'Remember me'
-      %button Sign in
-      = link_to "Forgot your password?", new_password_path(:employee)
-.appBox
-  %input#downloadBtn.button{:type => "submit", :value => "Available on the App Store"}
-  = image_tag 'apple-logo.png'
+.mainContainer
+  %nav.navBanner
+    %ul.navLeft
+      %li= link_to "Home", root_path
+    %ul.navRight
+      =if current_employee
+        %li= link_to "#{current_employee.fname + current_employee.lname}"
+        %li= link_to "Log Out", destroy_employee_session_path, method: :delete
+  .bg
+    .titleBox
+      %h1 Busbee
+    .inputBox
+      -unless current_employee
+        = form_tag session_path(:employee) do
+          .comBox
+            = text_field_tag 'employee[email]'
+          .passBox
+            = password_field_tag 'employee[password]'
+            .remMe
+              = check_box_tag 'employee[remember_me]'
+              = label_tag 'employee[remember_me]', 'Remember me', class: "passText"
+          .tags
+          %button.btn.btn-default
+            Sign In
+    .appBox
+      = link_to image_tag('app_store-logo.png'), "http:// www.apple.com/"
+  .bottomBanner
+    %span Busbee 2014
