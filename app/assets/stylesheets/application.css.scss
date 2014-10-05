@@ -25,7 +25,7 @@
 
 .navBanner {
   overflow: auto;
-  background-color: gray;
+  background-color: HSLA(221, 29%, 26%, 1);
   padding: 15px 0px;
 
   .navLeft {
@@ -47,33 +47,27 @@
   li {
     float: left;
     list-style-type: none;
-    color: white;
+    color: HSLA(219, 28%, 77%, 1);
   }
 }
 
 .bg {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url('http://f.cl.ly/items/3F2k1K0t0g3Z2O0i1u3p/Hongkong_Skyline.jpg');
+  background-image: url('http://f.cl.ly/items/1h1W0l1i032X092a2R1z/Chicago_Skyline.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.7;
-  width: 100%;
+  padding: 80px 0;
 }
 
 .titleBox {
   text-align: center;
-  margin: 100px auto 0 auto;
+  margin: 10px auto;
   width: 400px;
   background-color: HSLA(221, 29%, 26%, 1);
 
   h1 {
     font-size: 30px;
     color: HSLA(219, 28%, 77%, 1);
+    margin: 0px;
     padding: 10px 0px;
   }
 }
@@ -93,14 +87,16 @@
   background-color: HSLA(219, 28%, 77%, 1);
   font-size: 20px;
   color: HSLA(221, 29%, 26%, 1);
+  border: none;
 }
 
 .passBox {
-  margin: 100px auto;
+  margin: 100px auto 83px auto;
 }
 
 .passText {
-  background-color: white;
+  margin-top: 10px;
+  background-color: HSLA(219, 28%, 77%, 1);
 }
 
 #employee_password {
@@ -109,6 +105,7 @@
   background-color: HSLA(219, 28%, 77%, 1);
   font-size: 20px;
   color: HSLA(221, 29%, 26%, 1);
+  border: none;
 }
 
 .btn {
@@ -118,14 +115,27 @@
   background-color: HSLA(219, 28%, 77%, 1);
   font-size: 20px;
   color: HSLA(221, 29%, 26%, 1);
+  border: none;
+  border-radius: 0px;
 }
 
 .appBox {
   width: 100px;
-  margin: 80px auto 0px auto;
+  margin: 115px auto 0px auto;
 
   img {
     max-width: 100%;
+  }
+}
+
+.bottomBanner {
+  background-color: HSLA(221, 29%, 26%, 1);
+  padding: 15px 0px;
+
+  span {
+    display: block;
+    text-align: center;
+    color: HSLA(219, 28%, 77%, 1);
   }
 }
 
