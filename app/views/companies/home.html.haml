@@ -8,9 +8,15 @@
         %li= link_to "Log Out", destroy_employee_session_path, method: :delete
   .bg
     .titleBox
-      %h1 Busbee
+      .logo=image_tag('logo.png')
     .inputBox
-      -unless current_employee
+      -if current_employee
+        .bgLoggedIn
+          .employeeList
+            =link_to 'View Employees', company_employees_path(current_employee)
+          .folderList
+            =link_to 'My Folder', employee_folders_path(current_employee)
+      -else
         = form_tag session_path(:employee) do
           .comBox
             = text_field_tag 'employee[email]', "Email"
