@@ -152,50 +152,47 @@
   width: 180px;
 }
 
-//
-// .folderActions {
-//   overflow: auto;
-//
-//   .boxLeft {
-//     float: left;
-//     padding: 0px;
-//     margin-left: 50px;
-//   }
-//
-//   .boxRight {
-//     float: right;
-//     padding: 0px;
-//     margin-right: 50px;
-//   }
-//
-//     li {
-//       margin-right: 40px;
-//       list-style-type: none;
-//     }
-//
-//   li {
-//     float: left;
-//     width: 50px;
-//   }
-//
-//   img {
-//     width: 100%;
-//   }
-// }
-//
-// .folderCon {
-//   text-align: center;
-//
-//   .folderTopBox img, .folderBottomBox img {
-//     margin: 40px 40px;
-//     width: 100px;
-//     height: 100px;
-//     border: 3px solid black;
-//   }
-// }
-//
-//
-// /*****************************************************************************************     Custom Styles - COMPANY PAGE ******************************************************************************************/
+.folderActions {
+  overflow: auto;
+
+  .boxLeft {
+    float: left;
+    padding: 0px;
+    margin-left: 50px;
+  }
+
+  .boxRight {
+    float: right;
+    padding: 0px;
+    margin-right: 50px;
+  }
+
+    li {
+      margin-right: 40px;
+      list-style-type: none;
+    }
+
+  li {
+    float: left;
+    width: 50px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.folderCon {
+  text-align: center;
+
+  .folderTopBox img, .folderBottomBox img {
+    margin: 40px 40px;
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+  }
+}
+ /*****************************************************************************************     Custom Styles - COMPANY PAGE ******************************************************************************************/
 //
 // .navBanner {
 //   overflow: auto;

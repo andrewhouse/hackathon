@@ -1,23 +1,29 @@
-.mainBanner
-  .bgEP
-  .titleBoxEP
-    %span= current_employee.company.title
-  .logoBox
-    %img{:alt => "", :src => "http://cdn.dice.com/wp-content/uploads/2013/07/space-thumbnail.jpg"}/
-.folderBanner
-  %span FOLDERS
-%nav.folderActions
-  %ul.boxLeft
-    %li
-      =link_to image_tag("add-folder-icon.png"), new_employee_folder_path(current_employee)
-  %ul.boxRight
-    %li
-      %img{:alt => "", :src => "https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-068_grid_view-128.png"}/
-    %li
-      %img{:alt => "", :src => "http://www.uplooder.net/images/filedetails_benefit.png"}/
-.folderCon
-  -@employees.each do |e|
-    .folderTopBox
-      =link_to image_tag('folder-image.png'), employee_folders_path(e)
-    .folderBottomBox
-
+.mainContainer
+  %nav.navBanner
+    %ul.navLeft
+      %span link
+    %ul.navRight
+      %span link
+  .bgBanner
+    .titleBox
+      %h1 Busbee
+    .logoBox
+      %img{:alt => "", :src => "http://cdn.dice.com/wp-content/uploads/2013/07/space-thumbnail.jpg"}
+  .middleBanner
+    %span MY FOLDERS
+  %nav.folderActions
+    %ul.boxLeft
+      %li
+        =link_to image_tag("add-folder-icon.png"), new_employee_folder_path(current_employee)
+    %ul.boxRight
+      %li
+        %img{:alt => "", :src => "https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-068_grid_view-128.png"}/
+      %li
+        %img{:alt => "", :src => "http://www.uplooder.net/images/filedetails_benefit.png"}/
+  .folderCon
+    -@employees.each do |e|
+      .folderTopBox
+        =link_to image_tag('folder-image.png'), employee_folders_path(e)
+      .folderBottomBox
+  .bottomBanner
+    %span Busbee 2014
