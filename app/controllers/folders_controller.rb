@@ -1,30 +1,34 @@
 class FoldersController < ApplicationController
   before_action :set_folder, only: [:show, :edit, :update, :destroy]
-  before_filter :authentication_check
 
   # GET /folders
   # GET /folders.json
   def index
+    authorize! :read, Folder
     @folders = current_employee.folders.all
   end
 
   # GET /folders/1
   # GET /folders/1.json
   def show
+    authentication_check unless current_employee
   end
 
   # GET /folders/new
   def new
+    authorize! :modify, @folder
     @folder = Folder.new
   end
 
   # GET /folders/1/edit
   def edit
+    authorize! :modify, @folder
   end
 
   # POST /folders
   # POST /folders.json
   def create
+    authorize! :modify, Folder
     @folder = current_employee.folders.new(folder_params)
 
     respond_to do |format|
@@ -41,6 +45,7 @@ class FoldersController < ApplicationController
   # PATCH/PUT /folders/1
   # PATCH/PUT /folders/1.json
   def update
+    authorize! :modify, @folder
     respond_to do |format|
       if @folder.update(folder_params)
         format.html { redirect_to @folder, notice: 'Folder was successfully updated.' }
@@ -55,6 +60,7 @@ class FoldersController < ApplicationController
   # DELETE /folders/1
   # DELETE /folders/1.json
   def destroy
+    authorize! :modify, @folder
     @folder.destroy
     respond_to do |format|
       format.html { redirect_to folders_url, notice: 'Folder was successfully destroyed.' }
