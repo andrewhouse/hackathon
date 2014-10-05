@@ -15,12 +15,40 @@
  */
 
  /*****************************************************************************************     Custom Styles - HOME PAGE AND LOGIN ******************************************************************************************/
- 
-.container {
+
+.mainContainer {
   position: relative;
   z-index: 1;
-  height: 1000px;
+  height: 768px;
   overflow: auto;
+}
+
+.navBanner {
+  overflow: auto;
+  background-color: gray;
+  padding: 15px 0px;
+
+  .navLeft {
+    float: left;
+    padding: 0px;
+    margin-left: 50px;
+  }
+
+  .navRight {
+    float: right;
+    padding: 0px;
+    margin-right: 50px;
+  }
+
+    li {
+      margin-right: 40px;
+    }
+
+  li {
+    float: left;
+    list-style-type: none;
+    color: white;
+  }
 }
 
 .bg {
@@ -30,7 +58,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url("http://cl.ly/image/0w2r1m3s3i21/800px-Atlanta_Skyline_from_Buckhead.jpg");
+  background-image: url('http://f.cl.ly/items/3F2k1K0t0g3Z2O0i1u3p/Hongkong_Skyline.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.7;
@@ -39,515 +67,531 @@
 
 .titleBox {
   text-align: center;
-  width: 500px;
   margin: 100px auto 0 auto;
-  border: 5px solid white;
-  color: white;
+  width: 400px;
+  background-color: HSLA(221, 29%, 26%, 1);
+
+  h1 {
+    font-size: 30px;
+    color: HSLA(219, 28%, 77%, 1);
+    padding: 10px 0px;
+  }
 }
 
 .inputBox {
-  margin: 300px auto;
-  border: 5px solid white;
-  color: white;
+  text-align: center;
+  margin-top: 100px;
 }
 
 .comBox {
-  float: left;
-  margin-left: 200px;
-  display:inline-block;
-  border: 5px solid white;
-  color: white;
+  margin: 0 auto;
+}
+
+#employee_email {
+  width: 400px;
+  height: 50px;
+  background-color: HSLA(219, 28%, 77%, 1);
+  font-size: 20px;
+  color: HSLA(221, 29%, 26%, 1);
 }
 
 .passBox {
-  float: left;
-  display:inline-block;
-  margin-left: 200px;
-  border: 5px solid white;
-  color: white;
+  margin: 100px auto;
+}
+
+.passText {
+  background-color: white;
+}
+
+#employee_password {
+  width: 400px;
+  height: 50px;
+  background-color: HSLA(219, 28%, 77%, 1);
+  font-size: 20px;
+  color: HSLA(221, 29%, 26%, 1);
+}
+
+.btn {
+  margin: 0 auto;
+  width: 400px;
+  height: 50px;
+  background-color: HSLA(219, 28%, 77%, 1);
+  font-size: 20px;
+  color: HSLA(221, 29%, 26%, 1);
 }
 
 .appBox {
-  clear: both;
-  width: 250px;
-  margin: 0 auto;
-  border: 5px solid white;
-  color: white;
-
-  button {
-
-  }
-
+  width: 100px;
+  margin: 80px auto 0px auto;
 
   img {
-    float: left;
-    width: 10%;
+    max-width: 100%;
   }
 }
 
 
 /*****************************************************************************************     Custom Styles - EMPLOYEE PAGE ******************************************************************************************/
 
-.navBanner {
-  overflow: auto;
-  background-color: gray;
-  padding: 15px 0px;
-
-  .navLeft {
-    float: left;
-    padding: 0px;
-    margin-left: 50px;
-  }
-
-  .navRight {
-    float: right;
-    padding: 0px;
-    margin-right: 50px;
-  }
-
-    li {
-      margin-right: 40px;
-    }
-
-  li {
-    float: left;
-    list-style-type: none;
-    color: white;
-  }
-}
-
-.mainBanner {
-  clear: both;
-  position: relative;
-  z-index: 1;
-  height: 400px;
-  overflow: hidden;
-
-  .bgEP {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url("http://cl.ly/image/0w2r1m3s3i21/800px-Atlanta_Skyline_from_Buckhead.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.7;
-  }
-
-  .titleBoxEP {
-    text-align: center;
-    width: 500px;
-    margin: 50px auto 0 auto;
-    border: 5px solid white;
-    color: white;
-  }
-
-  .logoBox {
-    display: block;
-    margin: 140px auto 0 auto;
-    text-align: center;
-  }
-}
-
-.folderBanner {
-  background-color: gray;
-  text-align: center;
-  padding: 30px 0px;
-
-  span {
-    font-size: 40px;
-    color: white;
-  }
-}
-
-.folderActions {
-  overflow: auto;
-
-  .boxLeft {
-    float: left;
-    padding: 0px;
-    margin-left: 50px;
-  }
-
-  .boxRight {
-    float: right;
-    padding: 0px;
-    margin-right: 50px;
-  }
-
-    li {
-      margin-right: 40px;
-      list-style-type: none;
-    }
-
-  li {
-    float: left;
-    width: 50px;
-  }
-
-  img {
-    width: 100%;
-  }
-}
-
-.folderCon {
-  text-align: center;
-
-  .folderTopBox img, .folderBottomBox img {
-    margin: 40px 40px;
-    width: 100px;
-    height: 100px;
-    border: 3px solid black;
-  }
-}
-
-
-/*****************************************************************************************     Custom Styles - COMPANY PAGE ******************************************************************************************/
-
-.navBanner {
-  overflow: auto;
-  background-color: gray;
-  padding: 15px 0px;
-
-  .navLeft {
-    float: left;
-    padding: 0px;
-    margin-left: 50px;
-  }
-
-  .navRight {
-    float: right;
-    padding: 0px;
-    margin-right: 50px;
-  }
-
-    li {
-      margin-right: 40px;
-    }
-
-  li {
-    float: left;
-    list-style-type: none;
-    color: white;
-  }
-}
-
-.mainBanner {
-  clear: both;
-  position: relative;
-  z-index: 1;
-  height: 400px;
-  overflow: hidden;
-
-  .bgEP {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url("http://cl.ly/image/0w2r1m3s3i21/800px-Atlanta_Skyline_from_Buckhead.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.7;
-  }
-
-  .titleBoxEP {
-    text-align: center;
-    width: 500px;
-    margin: 50px auto 0 auto;
-    border: 5px solid white;
-    color: white;
-  }
-
-  .logoBox {
-    display: block;
-    margin: 140px auto 0 auto;
-    text-align: center;
-  }
-}
-
-.folderBanner {
-  background-color: gray;
-  text-align: center;
-  padding: 30px 0px;
-
-  span {
-    font-size: 40px;
-    color: white;
-  }
-}
-
-.folderCon {
-  text-align: center;
-
-  .folderTopBox img, .folderBottomBox img {
-    margin: 40px 40px;
-    width: 100px;
-    height: 100px;
-    border: 3px solid black;
-  }
-}
-
-/*****************************************************************************************     Custom Styles - FOLDER PAGE ******************************************************************************************/
-
-.navBanner {
-  overflow: auto;
-  background-color: gray;
-  padding: 15px 0px;
-
-  .navLeft {
-    float: left;
-    padding: 0px;
-    margin-left: 50px;
-  }
-
-  .navRight {
-    float: right;
-    padding: 0px;
-    margin-right: 50px;
-  }
-
-    li {
-      margin-right: 40px;
-    }
-
-  li {
-    float: left;
-    list-style-type: none;
-    color: white;
-  }
-}
-
-.mainBanner {
-  clear: both;
-  position: relative;
-  z-index: 1;
-  height: 400px;
-  overflow: hidden;
-
-  .bgEP {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url("http://cl.ly/image/0w2r1m3s3i21/800px-Atlanta_Skyline_from_Buckhead.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.7;
-  }
-
-  .titleBoxEP {
-    text-align: center;
-    width: 500px;
-    margin: 50px auto 0 auto;
-    border: 5px solid white;
-    color: white;
-  }
-
-  .logoBox {
-    display: block;
-    margin: 140px auto 0 auto;
-    text-align: center;
-  }
-}
-
-.folderBanner {
-  background-color: gray;
-  text-align: center;
-  padding: 30px 0px;
-
-  span {
-    font-size: 40px;
-    color: white;
-  }
-}
-
-.folderCon {
-  text-align: center;
-
-  .folderTopBox img, .folderBottomBox img {
-    margin: 40px 40px;
-    width: 100px;
-    height: 100px;
-    border: 3px solid black;
-  }
-}
-
-/*****************************************************************************************     Custom Styles - SIGN UP PAGE ******************************************************************************************/
-
-.navBanner {
-  overflow: auto;
-  background-color: gray;
-  padding: 15px 0px;
-
-  .navLeft {
-    float: left;
-    padding: 0px;
-    margin-left: 50px;
-  }
-
-  .navRight {
-    float: right;
-    padding: 0px;
-    margin-right: 50px;
-  }
-
-    li {
-      margin-right: 40px;
-    }
-
-  li {
-    float: left;
-    list-style-type: none;
-    color: white;
-  }
-}
-
-.mainBanner {
-  clear: both;
-  position: relative;
-  z-index: 1;
-  height: 400px;
-  overflow: hidden;
-
-  .bgEP {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url("http://cl.ly/image/0w2r1m3s3i21/800px-Atlanta_Skyline_from_Buckhead.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.7;
-  }
-
-  .titleBoxEP {
-    text-align: center;
-    width: 500px;
-    margin: 50px auto 0 auto;
-    border: 5px solid white;
-    color: white;
-  }
-
-  .logoBox {
-    display: block;
-    margin: 140px auto 0 auto;
-    text-align: center;
-  }
-}
-
-.folderBanner {
-  background-color: gray;
-  text-align: center;
-  padding: 30px 0px;
-
-  span {
-    font-size: 40px;
-    color: white;
-  }
-}
-
-.folderCon {
-  text-align: center;
-
-  .folderTopBox img, .folderBottomBox img {
-    margin: 40px 40px;
-    width: 100px;
-    height: 100px;
-    border: 3px solid black;
-  }
-}
-
-/*****************************************************************************************     Custom Styles - SIGN UP PAGE ******************************************************************************************/
-
-.navBanner {
-  overflow: auto;
-  background-color: gray;
-  padding: 15px 0px;
-
-  .navLeft {
-    float: left;
-    padding: 0px;
-    margin-left: 50px;
-  }
-
-  .navRight {
-    float: right;
-    padding: 0px;
-    margin-right: 50px;
-  }
-
-    li {
-      margin-right: 40px;
-    }
-
-  li {
-    float: left;
-    list-style-type: none;
-    color: white;
-  }
-}
-
-.mainBanner {
-  clear: both;
-  position: relative;
-  z-index: 1;
-  height: 400px;
-  overflow: hidden;
-
-  .bgEP {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url("http://cl.ly/image/0w2r1m3s3i21/800px-Atlanta_Skyline_from_Buckhead.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.7;
-  }
-
-  .titleBoxEP {
-    text-align: center;
-    width: 500px;
-    margin: 50px auto 0 auto;
-    border: 5px solid white;
-    color: white;
-  }
-
-  .logoBox {
-    display: block;
-    margin: 140px auto 0 auto;
-    text-align: center;
-  }
-}
-
-.folderBanner {
-  background-color: gray;
-  text-align: center;
-  padding: 30px 0px;
-
-  span {
-    font-size: 40px;
-    color: white;
-  }
-}
-
-.folderCon {
-  text-align: center;
-
-  .folderTopBox img, .folderBottomBox img {
-    margin: 40px 40px;
-    width: 100px;
-    height: 100px;
-    border: 3px solid black;
-  }
-}
+// .navBanner {
+//   overflow: auto;
+//   background-color: gray;
+//   padding: 15px 0px;
+//
+//   .navLeft {
+//     float: left;
+//     padding: 0px;
+//     margin-left: 50px;
+//   }
+//
+//   .navRight {
+//     float: right;
+//     padding: 0px;
+//     margin-right: 50px;
+//   }
+//
+//     li {
+//       margin-right: 40px;
+//     }
+//
+//   li {
+//     float: left;
+//     list-style-type: none;
+//     color: white;
+//   }
+// }
+//
+// .mainBanner {
+//   clear: both;
+//   position: relative;
+//   z-index: 1;
+//   height: 400px;
+//   overflow: hidden;
+//
+//   .bgEP {
+//     position: absolute;
+//     z-index: -1;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     background-image: url("http://cl.ly/image/0w2r1m3s3i21/800px-Atlanta_Skyline_from_Buckhead.jpg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     opacity: 0.7;
+//   }
+//
+//   .titleBoxEP {
+//     text-align: center;
+//     width: 500px;
+//     margin: 50px auto 0 auto;
+//     border: 5px solid white;
+//     color: white;
+//   }
+//
+//   .logoBox {
+//     display: block;
+//     margin: 140px auto 0 auto;
+//     text-align: center;
+//   }
+// }
+//
+// .folderBanner {
+//   background-color: gray;
+//   text-align: center;
+//   padding: 30px 0px;
+//
+//   span {
+//     font-size: 40px;
+//     color: white;
+//   }
+// }
+//
+// .folderActions {
+//   overflow: auto;
+//
+//   .boxLeft {
+//     float: left;
+//     padding: 0px;
+//     margin-left: 50px;
+//   }
+//
+//   .boxRight {
+//     float: right;
+//     padding: 0px;
+//     margin-right: 50px;
+//   }
+//
+//     li {
+//       margin-right: 40px;
+//       list-style-type: none;
+//     }
+//
+//   li {
+//     float: left;
+//     width: 50px;
+//   }
+//
+//   img {
+//     width: 100%;
+//   }
+// }
+//
+// .folderCon {
+//   text-align: center;
+//
+//   .folderTopBox img, .folderBottomBox img {
+//     margin: 40px 40px;
+//     width: 100px;
+//     height: 100px;
+//     border: 3px solid black;
+//   }
+// }
+//
+//
+// /*****************************************************************************************     Custom Styles - COMPANY PAGE ******************************************************************************************/
+//
+// .navBanner {
+//   overflow: auto;
+//   background-color: gray;
+//   padding: 15px 0px;
+//
+//   .navLeft {
+//     float: left;
+//     padding: 0px;
+//     margin-left: 50px;
+//   }
+//
+//   .navRight {
+//     float: right;
+//     padding: 0px;
+//     margin-right: 50px;
+//   }
+//
+//     li {
+//       margin-right: 40px;
+//     }
+//
+//   li {
+//     float: left;
+//     list-style-type: none;
+//     color: white;
+//   }
+// }
+//
+// .mainBanner {
+//   clear: both;
+//   position: relative;
+//   z-index: 1;
+//   height: 400px;
+//   overflow: hidden;
+//
+//   .bgEP {
+//     position: absolute;
+//     z-index: -1;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     background-image: url("http://cl.ly/image/0w2r1m3s3i21/800px-Atlanta_Skyline_from_Buckhead.jpg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     opacity: 0.7;
+//   }
+//
+//   .titleBoxEP {
+//     text-align: center;
+//     width: 500px;
+//     margin: 50px auto 0 auto;
+//     border: 5px solid white;
+//     color: white;
+//   }
+//
+//   .logoBox {
+//     display: block;
+//     margin: 140px auto 0 auto;
+//     text-align: center;
+//   }
+// }
+//
+// .folderBanner {
+//   background-color: gray;
+//   text-align: center;
+//   padding: 30px 0px;
+//
+//   span {
+//     font-size: 40px;
+//     color: white;
+//   }
+// }
+//
+// .folderCon {
+//   text-align: center;
+//
+//   .folderTopBox img, .folderBottomBox img {
+//     margin: 40px 40px;
+//     width: 100px;
+//     height: 100px;
+//     border: 3px solid black;
+//   }
+// }
+//
+// /*****************************************************************************************     Custom Styles - FOLDER PAGE ******************************************************************************************/
+//
+// .navBanner {
+//   overflow: auto;
+//   background-color: gray;
+//   padding: 15px 0px;
+//
+//   .navLeft {
+//     float: left;
+//     padding: 0px;
+//     margin-left: 50px;
+//   }
+//
+//   .navRight {
+//     float: right;
+//     padding: 0px;
+//     margin-right: 50px;
+//   }
+//
+//     li {
+//       margin-right: 40px;
+//     }
+//
+//   li {
+//     float: left;
+//     list-style-type: none;
+//     color: white;
+//   }
+// }
+//
+// .mainBanner {
+//   clear: both;
+//   position: relative;
+//   z-index: 1;
+//   height: 400px;
+//   overflow: hidden;
+//
+//   .bgEP {
+//     position: absolute;
+//     z-index: -1;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     background-image: url("http://cl.ly/image/0w2r1m3s3i21/800px-Atlanta_Skyline_from_Buckhead.jpg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     opacity: 0.7;
+//   }
+//
+//   .titleBoxEP {
+//     text-align: center;
+//     width: 500px;
+//     margin: 50px auto 0 auto;
+//     border: 5px solid white;
+//     color: white;
+//   }
+//
+//   .logoBox {
+//     display: block;
+//     margin: 140px auto 0 auto;
+//     text-align: center;
+//   }
+// }
+//
+// .folderBanner {
+//   background-color: gray;
+//   text-align: center;
+//   padding: 30px 0px;
+//
+//   span {
+//     font-size: 40px;
+//     color: white;
+//   }
+// }
+//
+// .folderCon {
+//   text-align: center;
+//
+//   .folderTopBox img, .folderBottomBox img {
+//     margin: 40px 40px;
+//     width: 100px;
+//     height: 100px;
+//     border: 3px solid black;
+//   }
+// }
+//
+// /*****************************************************************************************     Custom Styles - SIGN UP PAGE ******************************************************************************************/
+//
+// .navBanner {
+//   overflow: auto;
+//   background-color: gray;
+//   padding: 15px 0px;
+//
+//   .navLeft {
+//     float: left;
+//     padding: 0px;
+//     margin-left: 50px;
+//   }
+//
+//   .navRight {
+//     float: right;
+//     padding: 0px;
+//     margin-right: 50px;
+//   }
+//
+//     li {
+//       margin-right: 40px;
+//     }
+//
+//   li {
+//     float: left;
+//     list-style-type: none;
+//     color: white;
+//   }
+// }
+//
+// .mainBanner {
+//   clear: both;
+//   position: relative;
+//   z-index: 1;
+//   height: 400px;
+//   overflow: hidden;
+//
+//   .bgEP {
+//     position: absolute;
+//     z-index: -1;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     background-image: url("http://cl.ly/image/0w2r1m3s3i21/800px-Atlanta_Skyline_from_Buckhead.jpg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     opacity: 0.7;
+//   }
+//
+//   .titleBoxEP {
+//     text-align: center;
+//     width: 500px;
+//     margin: 50px auto 0 auto;
+//     border: 5px solid white;
+//     color: white;
+//   }
+//
+//   .logoBox {
+//     display: block;
+//     margin: 140px auto 0 auto;
+//     text-align: center;
+//   }
+// }
+//
+// .folderBanner {
+//   background-color: gray;
+//   text-align: center;
+//   padding: 30px 0px;
+//
+//   span {
+//     font-size: 40px;
+//     color: white;
+//   }
+// }
+//
+// .folderCon {
+//   text-align: center;
+//
+//   .folderTopBox img, .folderBottomBox img {
+//     margin: 40px 40px;
+//     width: 100px;
+//     height: 100px;
+//     border: 3px solid black;
+//   }
+// }
+//
+// /*****************************************************************************************     Custom Styles - SIGN UP PAGE ******************************************************************************************/
+//
+// .navBanner {
+//   overflow: auto;
+//   background-color: gray;
+//   padding: 15px 0px;
+//
+//   .navLeft {
+//     float: left;
+//     padding: 0px;
+//     margin-left: 50px;
+//   }
+//
+//   .navRight {
+//     float: right;
+//     padding: 0px;
+//     margin-right: 50px;
+//   }
+//
+//     li {
+//       margin-right: 40px;
+//     }
+//
+//   li {
+//     float: left;
+//     list-style-type: none;
+//     color: white;
+//   }
+// }
+//
+// .mainBanner {
+//   clear: both;
+//   position: relative;
+//   z-index: 1;
+//   height: 400px;
+//   overflow: hidden;
+//
+//   .bgEP {
+//     position: absolute;
+//     z-index: -1;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     background-image: url("http://cl.ly/image/0w2r1m3s3i21/800px-Atlanta_Skyline_from_Buckhead.jpg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     opacity: 0.7;
+//   }
+//
+//   .titleBoxEP {
+//     text-align: center;
+//     width: 500px;
+//     margin: 50px auto 0 auto;
+//     border: 5px solid white;
+//     color: white;
+//   }
+//
+//   .logoBox {
+//     display: block;
+//     margin: 140px auto 0 auto;
+//     text-align: center;
+//   }
+// }
+//
+// .folderBanner {
+//   background-color: gray;
+//   text-align: center;
+//   padding: 30px 0px;
+//
+//   span {
+//     font-size: 40px;
+//     color: white;
+//   }
+// }
+//
+// .folderCon {
+//   text-align: center;
+//
+//   .folderTopBox img, .folderBottomBox img {
+//     margin: 40px 40px;
+//     width: 100px;
+//     height: 100px;
+//     border: 3px solid black;
+//   }
+// }

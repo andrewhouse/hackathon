@@ -20,17 +20,15 @@
 
 
   %body
-    .containerEP
-      %nav.navBanner
-        %ul.navLeft
-          %li= link_to "Home", root_path
-        %ul.navRight
-          =if current_employee
-            %li= link_to "#{current_employee.fname + current_employee.lname}" 
-            %li= link_to "Log Out", destroy_employee_session_path, method: :delete
-
-    .containerEP
-      = bootstrap_flash
-      = yield
-      %footer
-        %p &copy; Company 2014
+    -# .containerEP
+    -#   %nav.navBanner
+    -#     %ul.navLeft
+    -#       %li= link_to "Home", root_path
+    -#     %ul.navRight
+    -#       =if current_employee
+    -#         %li= link_to "#{current_employee.fname + current_employee.lname}"
+    -#         %li= link_to "Log Out", destroy_employee_session_path, method: :delete
+    -#
+    -# .containerEP
+    -#   = bootstrap_flash
+    = yield
