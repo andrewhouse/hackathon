@@ -165,6 +165,11 @@
     float: right;
     padding: 0px;
     margin-right: 50px;
+
+    img {
+      padding-top: 10px;
+      width: 60%;
+    }
   }
 
     li {
@@ -185,11 +190,11 @@
 .folderCon {
   text-align: center;
 
-  .folderTopBox img, .folderBottomBox img {
+  .folderTopBox img,
+  .folderBottomBox img {
     margin: 40px 40px;
-    width: 100px;
-    height: 100px;
-    border: 3px solid black;
+    width: 90px;
+    height: 90px;
   }
 }
  /*****************************************************************************************     Custom Styles - COMPANY PAGE ******************************************************************************************/
