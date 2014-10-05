@@ -521,41 +521,23 @@
 //
 // /*****************************************************************************************     Custom Styles - SIGN UP PAGE ******************************************************************************************/
 //
-// .navBanner {
-//   overflow: auto;
-//   background-color: gray;
-//   padding: 15px 0px;
 //
-//   .navLeft {
-//     float: left;
-//     padding: 0px;
-//     margin-left: 50px;
-//   }
-//
-//   .navRight {
-//     float: right;
-//     padding: 0px;
-//     margin-right: 50px;
-//   }
-//
-//     li {
-//       margin-right: 40px;
-//     }
-//
-//   li {
-//     float: left;
-//     list-style-type: none;
-//     color: white;
-//   }
-// }
-//
-// .mainBanner {
-//   clear: both;
-//   position: relative;
-//   z-index: 1;
-//   height: 400px;
-//   overflow: hidden;
-//
+.mainBanner {
+  clear: both;
+  position: relative;
+  z-index: 1;
+  height: 400px;
+  overflow: auto;
+}
+
+.bgBanner {
+  background-image: url('http://f.cl.ly/items/041H210Z061B0Z1J3y0a/Paris_Skyline.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 80px 0;
+}
+
+
 //   .bgEP {
 //     position: absolute;
 //     z-index: -1;
@@ -584,16 +566,16 @@
 //   }
 // }
 //
-// .folderBanner {
-//   background-color: gray;
-//   text-align: center;
-//   padding: 30px 0px;
-//
-//   span {
-//     font-size: 40px;
-//     color: white;
-//   }
-// }
+.middleBanner {
+  background-color: gray;
+  text-align: center;
+  padding: 30px 0px;
+
+  span {
+    font-size: 40px;
+    color: white;
+  }
+}
 //
 // .folderCon {
 //   text-align: center;
