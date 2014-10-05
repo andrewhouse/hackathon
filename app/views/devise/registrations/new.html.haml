@@ -1,21 +1,17 @@
 .mainContainer
   %nav.navBanner
     %ul.navLeft
-      %span text
+      %span link
     %ul.navRight
-      %span text
+      %span link
   .bgBanner
     .titleBox
-      %span Folder Page
+      %h1 Busbee
     .logoBox
       %img{:alt => "", :src => "http://cdn.dice.com/wp-content/uploads/2013/07/space-thumbnail.jpg"}
   .middleBanner
     %span SIGN UP
-  .folderCon
-    .folderTopBox
-      %img{:alt => "", :src => "#"}/
-    .folderBottomBox
-      %img{:alt => "", :src => "#"}/
+  .formCon
   = simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
     = f.error_notification
     .form-inputs
@@ -28,3 +24,5 @@
     .form-actions
       = f.button :submit, "Sign up"
     = render "devise/shared/links"
+  .bottomBanner
+    %span Busbee 2014
