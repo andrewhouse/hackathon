@@ -15,7 +15,11 @@ class Folder < ActiveRecord::Base
   has_many :items
 
   def size
-    items.map(&:record_file_size).inject(&:+)
+    items.map(&:record_file_size).inject(&:+)/1000000
+  end
+
+  def updated
+    updated_at.strftime("%b %d, %Y")
   end
 
 end
