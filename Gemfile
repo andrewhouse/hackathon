@@ -20,6 +20,7 @@ gem "paperclip"
 gem "aws-sdk"
 gem 'figaro'
 gem 'gravtastic'
+gem 'cancancan'
 
 group :development do
   gem "quiet_assets"

@@ -18,4 +18,8 @@ class Item < ActiveRecord::Base
   has_attached_file :record
   do_not_validate_attachment_file_type :record
   validates :record, :attachment_presence => true
+
+  def s3_url
+    record.url
+  end
 end

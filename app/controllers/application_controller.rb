@@ -18,4 +18,16 @@ class ApplicationController < ActionController::Base
       super
     end
   end
+
+  rescue_from CanCan::AccessDenied do |exception|
+    if current_employee
+      redirect_to root_path, :alert => exception.message
+    else
+      redirect_to root_path, :alert => "Please sign in"
+    end
+  end
+
+  def current_ability
+    @current_ability ||= Ability.new(current_employee)
+  end
 end
