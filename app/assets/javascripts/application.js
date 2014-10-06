@@ -15,3 +15,6 @@
 //= require twitter/bootstrap
 //
 //= require_tree .
+
+$(function(){
+   $('.tooltp').tooltip();})

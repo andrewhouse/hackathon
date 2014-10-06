@@ -4,7 +4,8 @@
       %span
         =link_to 'HOME', root_path
     %ul.navRight
-      %span link
+      %span 
+        =link_to "EMPLOYEES", employee_folders_path(current_employee)
   .bgBanner
     .titleBox
       .logo=image_tag('logo.png')
@@ -13,7 +14,7 @@
   %nav.folderActions
     %ul.boxLeft
       %li
-        =link_to image_tag("add-folder-icon.png"), new_employee_folder_path(current_employee)
+        =link_to image_tag('add-folder-icon.png', class: "tooltp", "data-toggle"=> "tooltip", "data-placement" => "top", title: "Create New Folder"), new_employee_folder_path(current_employee)
     %ul.boxRight
       %li
         %img{:alt => "", :src => "https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-068_grid_view-128.png"}/
@@ -22,7 +23,7 @@
   .folderCon
     -@folders.each do |e|
       .folderTopBox
-        =link_to image_tag('folder-image.png'), folder_path(e)
+        =link_to image_tag('folder-image.png', class: "tooltp", "data-toggle"=> "tooltip", "data-placement" => "top", title: "#{e.title}"), folder_path(e)
       .folderBottomBox
   .bottomBanner
     %span Busbee 2014

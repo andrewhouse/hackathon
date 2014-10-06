@@ -4,7 +4,8 @@
       %span
         =link_to 'HOME', root_path
     %ul.navRight
-      %span link
+      Owned By:
+      ="#{@folder.employee.fname} #{@folder.employee.lname}"
   .bgBanner
     .titleBox
       .logo=image_tag('logo.png')
@@ -24,6 +25,7 @@
       = f.button :submit
     -@folder.items.each do |item|
       .folderTopBox
-        = link_to image_tag('new-folder-icon.png'), item.record.url
+        -unless item.record.url.include?('/records/original/missing.png')
+          = link_to image_tag('new-folder-icon.png', class: "tooltp", "data-toggle"=> "tooltip", "data-placement" => "top", title: "#{item.title}"), item.record.url
   .bottomBanner
     %span Busbee 2014

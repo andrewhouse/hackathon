@@ -1,10 +1,10 @@
-= simple_form_for(@folder) do |f|
+= simple_form_for([current_employee,@folder]) do |f|
   = f.error_notification
 
   .form-inputs
     = f.input :title
     = f.input :description
-    = f.input :user_id
+    = f.hidden_field :employee_id, value: current_employee.id
 
   .form-actions
     = f.button :submit
